@@ -17,7 +17,7 @@ L'état futur d'une cellule (si elle nait ou elle meurt), est déterminé grâce
 Le but de l'exercice est de simuler un jeu de la vie en ruby. Essayez d'adopter une approche orientée objet. N'oubliez pas de testez vos classes!
 
 ## Etapes et Guidelines
-Si vous souhaitez un peu d’aide, vous pouvez dérouler ce qui suit. Spoiler alert ! 
+(Work in progress) Si vous souhaitez un peu d’aide, vous pouvez dérouler ce qui suit. Spoiler alert ! 
 
 <details>
 ### Création de la classe Cell
