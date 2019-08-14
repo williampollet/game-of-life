@@ -38,15 +38,24 @@ class Cell
     end
   end
 
-  def display(state = @state)
-    # app.eval_with_additional_context do |app|
+  def display(state = @state, initial_display: false)
+    if initial_state
       app.rect(
         fill: color(state),
         left: 25 * x,
         top: 25 * y,
         width: 25
       )
-    # end
+    else
+      app.eval_with_additional_context do |app|
+        app.rect(
+          fill: color(state),
+          left: 25 * x,
+          top: 25 * y,
+          width: 25
+        )
+      end
+    end
   end
 
   private
