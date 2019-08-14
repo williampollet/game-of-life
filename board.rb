@@ -27,7 +27,7 @@ class Board
   def display
    (0..size).reverse_each do |y|
       (0..size).each do |x|
-        @cells.select{ |c| c.x == x && c.y == y }.first.display(initial_state: true)
+        @cells.select{ |c| c.x == x && c.y == y }.first.display(initial_display: true)
       end
     end
   end

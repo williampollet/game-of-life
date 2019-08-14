@@ -39,7 +39,7 @@ class Cell
   end
 
   def display(state = @state, initial_display: false)
-    if initial_state
+    if initial_display
       app.rect(
         fill: color(state),
         left: 25 * x,
@@ -47,14 +47,12 @@ class Cell
         width: 25
       )
     else
-      app.eval_with_additional_context do |app|
-        app.rect(
-          fill: color(state),
-          left: 25 * x,
-          top: 25 * y,
-          width: 25
-        )
-      end
+      app.rect(
+        fill: color(state),
+        left: 25 * x,
+        top: 25 * y,
+        width: 25
+      )
     end
   end
 

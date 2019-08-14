@@ -15,7 +15,9 @@ class Game
 
   def start
     (0..iterations_number).each do |iteration|
-      board.update
+      app.animate do |i|
+        board.update
+      end
     end
   end
 end
