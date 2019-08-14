@@ -1,17 +1,18 @@
 require './cell'
 
 class Board
-  attr_reader :cells, :size
+  attr_reader :cells, :size, :app
 
-  def initialize(size:)
+  def initialize(size:, app:)
     @cells = []
     @size = size
+    @app = app
   end
 
   def populate
     (0..size).each do |x|
       (0..size).each do |y|
-        @cells << Cell.new(initial_state: %w[dead alive].sample ,x: x,y: y)
+        @cells << Cell.new(initial_state: %w[dead alive].sample ,x: x,y: y, app: app)
       end
     end
 
@@ -24,12 +25,10 @@ class Board
   end
 
   def display
-    puts '#####################################################################'
    (0..size).reverse_each do |y|
       (0..size).each do |x|
         @cells.select{ |c| c.x == x && c.y == y }.first.display
       end
-      puts
     end
   end
 
