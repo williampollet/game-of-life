@@ -9,9 +9,13 @@ class Board
     @app = app
   end
 
+  def reset
+    @cells = []
+  end
+
   def populate
-    (0..size).each do |x|
-      (0..size).each do |y|
+    (0..size-1).each do |x|
+      (0..size-1).each do |y|
         @cells << Cell.new(initial_state: %w[dead alive].sample ,x: x,y: y, app: app)
       end
     end
@@ -25,8 +29,8 @@ class Board
   end
 
   def display
-   (0..size).reverse_each do |y|
-      (0..size).each do |x|
+   (0..size-1).reverse_each do |y|
+      (0..size-1).each do |x|
         @cells.select{ |c| c.x == x && c.y == y }.first.display(initial_display: true)
       end
     end

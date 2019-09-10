@@ -43,20 +43,24 @@ class Cell
       app.rect(
         fill: color(state),
         left: 25 * x,
-        top: 25 * y,
+        top: 25 * y + offset,
         width: 25
       )
     else
       app.rect(
         fill: color(state),
         left: 25 * x,
-        top: 25 * y,
+        top: 25 * y + offset,
         width: 25
       )
     end
   end
 
   private
+
+  def offset
+    300
+  end
 
   def color(state)
     state == 'alive' ? '#02a552' : '#000'
