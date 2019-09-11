@@ -15,6 +15,7 @@ L'état futur d'une cellule (si elle nait ou elle meurt), est déterminé grâce
 
 ## Exemples
 Si, au temps t, la grille ressemble à ceci:
+
 ![t](examples/t.png)
 
 
