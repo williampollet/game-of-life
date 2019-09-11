@@ -27,23 +27,7 @@ Au temps t+1, l'état des cellules aura changé, comme ceci:
 Le but de l'exercice est de simuler un jeu de la vie en ruby. Essayez d'adopter une approche orientée objet. N'oubliez pas de testez vos classes!
 
 ## Etapes et Guidelines
-Si vous souhaitez un peu d’aide, vous pouvez dérouler ce qui suit. Spoiler alert !
-
-<details>
-Création de la classe Cell
-Commencons par créer une classe cell. En
-
-Création de la classe Board, et implémentation de la liste des cellules
-Créons ensuite la classe Board
-
-Utilisation des classes Cell et Board
-Il n’y a plus qu’à créer l’algorithme !
-
-Affichage du board dans la console.
-C’est bien tout ca, mais on ne voit rien ! Et si on imprimait nos résultats dans la console ?
-
-Un framework pour faire des applications avec Ruby : Shoes.
-</details>
+Pour un peu d’aide, voir la section [steps_and_guidelines](steps_and_guidelines)
 
 ## Pour aller plus loin
 Vous pouvez regarder l'excellent documentaire sur la chaîne [Le Jeu de la Vie — Science étonnante #49 - YouTube](https://www.youtube.com/watch?v=S-W0NX97DB0) pour en apprendre plus sur le jeu de la vie.
